@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+//        чтение данных
         File file = new File("fileDir/INPUT.TXT");
         FileReader fis = new FileReader(file);
         int charCode;
@@ -16,6 +17,7 @@ public class Main {
         System.out.println("line = " + line);
         String[] mean = line.split(" ");
 
+//      обработка данных
 
         }
     }
