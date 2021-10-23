@@ -1,3 +1,11 @@
+/*
+https://acmp.ru
+Задание 267
+
+при проверке не устраивает скорость
+*/
+
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
