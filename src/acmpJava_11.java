@@ -1,6 +1,6 @@
 /*
 https://acmp.ru
-Задание 10
+Задание 11
     В нашем зоопарке появился заяц.
     Его поместили в клетку, и чтобы ему не было скучно, директор зоопарка распорядился
     поставить в его клетке лесенку. Теперь наш зайчик может прыгать по лесенке вверх,
@@ -28,7 +28,7 @@ https://acmp.ru
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
-public class acmpJava_10 {
+public class acmpJava_11 {
     static String stringArray;
     static int K = 0;
     static int N = 0;
