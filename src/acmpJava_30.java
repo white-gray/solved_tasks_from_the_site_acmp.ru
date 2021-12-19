@@ -86,14 +86,13 @@ public class acmpJava_30 {
      * выполнение задачи
      * */
     private static void toDo() {
-        add(startTimeArray[0], true);
-        add(startTimeArray[1], true);
-        add(startTimeArray[2], true);
-        boolean changeFirst = false;
         while (true) {
+            add(startTimeArray[0]);
+            add(startTimeArray[1]);
+            add(startTimeArray[2]);
+            startTimeArray[2]++;
             if (startTimeArray[0] >= endTimeArray[0] && startTimeArray[1] >= endTimeArray[1]
                     && startTimeArray[2] > endTimeArray[2]) break;
-            startTimeArray[2]++;
             if (startTimeArray[2] > 60) {
                 startTimeArray[2] = 0;
                 startTimeArray[1]++;
@@ -101,28 +100,14 @@ public class acmpJava_30 {
                     startTimeArray[1] = 0;
                     startTimeArray[0]++;
                 }
-                if (startTimeArray[0] % 10 == 0) changeFirst = true;
-                add(startTimeArray[0], changeFirst);
-                changeFirst = false;
-                if (startTimeArray[1] % 10 == 0) changeFirst = true;
-                add(startTimeArray[1], changeFirst);
-                changeFirst = false;
             }
-            if (startTimeArray[2] % 10 == 0) changeFirst = true;
-            add(startTimeArray[2], changeFirst);
-            changeFirst = false;
         }
     }
 
-    private static void add(int value, boolean changeFirst) {
-System.out.println("value = " + value);
+    private static void add(int value) {
         int tenner = value / 10;
         int digitTwo = value - (tenner * 10);
-        System.out.println("\ttenner = " + tenner);
-        System.out.println("\tdigitTwo = " + digitTwo);
-        if (changeFirst) {
-            howManyDidgins[tenner]++;
-        }
+        howManyDidgins[tenner]++;
         howManyDidgins[digitTwo]++;
     }
 
